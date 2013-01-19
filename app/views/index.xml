@@ -1,5 +1,30 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+		<View id="main">
+			<View id="iconBar">
+				<ImageView id="menuBtn" />
+				<Label id="titleLabel">MakeMyDay</Label>
+				<ImageView id="addMMD" />
+			</View>
+			<TableView id="MMDList">
+				<TableViewRow id="listRow">
+					<View id="rowContainer">
+						<ImageView id="MMDDefault" />
+						<Label id="MMDContent">Content.....</Label>
+						<View id="bottomActions">
+							<View id="starred" class="itemActionButton">
+								<Label id="starredLabel">Starred</Label>
+							</View>
+							<View id="like" class="itemActionButton">
+								<Label id="likeLabel">Like</Label>
+							</View>
+							<View id="starred" class="itemActionButton">
+								<Label id="unlikeLabel">Unlike</Label>
+							</View>
+						</View>
+					</View>
+				</TableViewRow>
+			</TableView>
+		</View>
 	</Window>
 </Alloy>
