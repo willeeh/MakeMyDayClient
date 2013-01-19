@@ -1,3 +1,5 @@
 module.exports = {
-    dependencies: {}
+    dependencies: {
+        login: "1.0"
+    }
 };

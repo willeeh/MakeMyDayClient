@@ -10,19 +10,13 @@ function Controller() {
         id: "index"
     }), "Window", null);
     $.addTopLevelView($.__views.index);
-    $.__views.label = A$(Ti.UI.createLabel({
-        width: Ti.UI.SIZE,
-        height: Ti.UI.SIZE,
-        color: "#000",
-        text: "Hello, World",
-        id: "label"
-    }), "Label", $.__views.index);
-    $.__views.index.add($.__views.label);
-    doClick ? $.__views.label.on("click", doClick) : __defers["$.__views.label!click!doClick"] = !0;
+    $.__views.login = Alloy.createWidget("login", "widget", {
+        id: "login"
+    });
+    $.__views.login.setParent($.__views.index);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.index.open();
-    __defers["$.__views.label!click!doClick"] && $.__views.label.on("click", doClick);
     _.extend($, exports);
 }
 
