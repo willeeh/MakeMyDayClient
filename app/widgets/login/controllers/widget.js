@@ -7,9 +7,11 @@ Ti.Facebook.addEventListener('login', function(e) {
 			name: 		e.data.name,
 			gender:		e.data.gender,
 			email:		e.data.email,
-			picture:	'http://graph.facebook.com/'+e.data.id+'/picture'
+			picture:	'http://graph.facebook.com/'+e.data.id+'/picture',
+			devices:	[
+							{ udid:	Ti.Platform.id }
+						]
 		};
-		
 		server.signUp(userData);
 		Ti.App.addEventListener(server.SIGNED,function(e)		
 		{			

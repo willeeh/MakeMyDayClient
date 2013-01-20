@@ -6,13 +6,13 @@
     <property name="acs-oauth-secret-development" type="string">iJEGC8FQHSlvRpKj7JiLWKl43tGNRstD</property>
     <property name="acs-oauth-key-development" type="string">DoE2h4RgM6ZRMTkvUAmey80MCm2gP9ly</property>
     <property name="acs-api-key-development" type="string">znyvh3xSlrCKFrVWAEOQ91s6UhvwTJU8</property>
-    <id>com.makemyday.client</id>
+    <id>com.makemyday</id>
     <name>MakeMyDay</name>
     <version>1.0</version>
     <publisher>guillermoceballos</publisher>
     <url>http://</url>
     <description>not specified</description>
-    <copyright>2013 by guillermoceballos</copyright>
+    <copyright>2013</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
