@@ -1,5 +1,5 @@
 <Alloy>
 	<Window class="container">
-		<Require type="widget" src="login" id="login"/>
+		<Require type="widget" src="login" id="login" onLogged="logged"/>		
 	</Window>
 </Alloy>

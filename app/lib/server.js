@@ -5,7 +5,8 @@ exports.POST  	= 'POST';
 exports.GET 	= 'GET';
  
 //*** Protected variables:
-var host = "http://localhost:8080/v1/";
+//var host = "http://localhost:8080/v1/";
+var host = "http://damp-ravine-1429.herokuapp.com/v1/"
  
 //*** Public methods:
 exports.signUp = function (userData) {
@@ -20,7 +21,7 @@ send = function (path, method, postData) {
 		Ti.App.fireEvent(exports.SIGNED,e);
 	};
 			
-	xhr.open(method, host+method);
+	xhr.open(method, host+path);
 	xhr.setRequestHeader('Content-Type', 'application/json');
 	if (postData)
 		xhr.send(postData);
