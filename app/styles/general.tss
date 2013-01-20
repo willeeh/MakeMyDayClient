@@ -1,0 +1,63 @@
+".container": {
+	backgroundColor: "white"
+},
+"#main": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor:"#E0E0E0",
+	left: 0,
+	layout: "vertical"
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	left: 0,
+},
+"#iconBar": {
+	height: 50,
+	width: Ti.UI.FILL,
+	backgroundColor: "#eff2f5"
+},
+"#menuBtn": {
+	left: 0,
+	width: "55",
+	height: "54"
+},
+"#titleLabel": {
+	width: "150",
+	height: "50",
+	layout: "horizontal"
+},
+"#addMMD": {
+	right: 0,
+	width: "55",
+	height: "54"	
+},
+"#listRow":{
+	height: "200",
+	selectionStyle: "NONE"
+},
+"#rowContainer":{
+	borderColor: "#cacdd8",
+	borderRadius: 5,
+	borderWidth: 1,
+	left: "5",
+	right: "5",
+	bottom: "5",
+	top: "5",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#fff"
+},
+"#bottomActions":{
+	bottom: 0,
+	height: "50",
+	width: Ti.UI.FILL,
+	backgroundColor: "#eff2f5",
+	layout: "horizontal"
+},
+".itemActionButton":{
+	width: "33%",
+	height: "50"
+}
